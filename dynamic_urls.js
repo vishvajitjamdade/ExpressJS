@@ -17,7 +17,7 @@ app.get("/",(req,res)=>{
 //     }
 // });
 
-//SECURE DATA DOES NOT EXPOSED HERE USING POSTMAN
+//SECURE DATA -- DOES NOT EXPOSE DATA HERE WHEN WE USE POSTMAN
 app.post("/login",(req,res)=>{
     if(req.body.username == "admin" && req.body.password == "1234"){
         res.send("Login Successful");
