@@ -7,6 +7,7 @@ app.get("/",(req,res)=>{
     res.send("Dynamic URLs");
 });
 
+//HERE DATA IS GET THROUGH URLS -- UNSEURE BECUASE DATA IS DISPLAYED IN URLS
 // app.get("/profile/:username/:password",(req,res)=>{
 //     if(req.params.username == "admin" && req.params.password == "1234"){
 //         res.send("Login Successful");
@@ -16,6 +17,7 @@ app.get("/",(req,res)=>{
 //     }
 // });
 
+//SECURE DATA DOES NOT EXPOSED HERE USING POSTMAN
 app.post("/login",(req,res)=>{
     if(req.body.username == "admin" && req.body.password == "1234"){
         res.send("Login Successful");
