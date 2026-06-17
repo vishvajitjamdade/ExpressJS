@@ -12,4 +12,18 @@ app.post("/register",(req,res)=>{
     res.send("Registration successfully completed");
 });
 
+//update entire data
+app.put("/demo1",(req,res)=>{
+    console.log("Data Updated");
+});
+
+//update partial data like only specific fields
+app.patch("/demo",(req,res)=>{
+    console.log("Data partially updated");
+});
+
+app.delete("/deletedata",(req,res)=>{
+    console.log("Data Deleted");
+});
+
 app.listen(1000);
